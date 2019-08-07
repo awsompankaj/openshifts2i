@@ -6,4 +6,4 @@ RUN chown apache:root /var/run/httpd /var/log/httpd
 RUN chmod -R 777 /var/run/httpd /var/log/httpd
 EXPOSE 8080
 user apache
-CMD ["/usr.sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
